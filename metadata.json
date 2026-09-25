@@ -1,0 +1,6 @@
+{
+  "name": "Amazone Wis'art Cotonou - Menu Digital & Console Cuisine",
+  "description": "Menu digital interactif, commande en direct à table et console cuisine en temps réel pour Amazone Wis'art Cotonou (Lounge, Bar & Grillades au Bénin). Mode hors-ligne et secours WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

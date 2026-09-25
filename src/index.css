@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Cinzel', serif, system-ui;
+    --font-body: 'Plus Jakarta Sans', sans-serif, system-ui;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #0b0a09;
+    color: #ede7dd;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: 0.03em;
+  }
+
+  .font-mono-numbers {
+    font-family: var(--font-mono);
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Animations */
+@keyframes pulseTable {
+  0%, 100% {
+    box-shadow: 0 0 0 1px rgba(194, 147, 68, 0.4), 0 4px 12px rgba(194, 147, 68, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(194, 147, 68, 0.45), 0 4px 18px rgba(194, 147, 68, 0.4);
+  }
+}
+
+.table-btn-unconfirmed {
+  animation: pulseTable 1.8s ease-in-out infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #14110e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2f2720;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c29344;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
